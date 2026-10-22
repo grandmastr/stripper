@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stripper — Search, without the noise.</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><a class="brand" href="help.html" target="_blank" aria-label="Stripper installation and help"><span class="mark" aria-hidden="true">≋</span>stripper<span class="brand-dot">.</span></a><span class="version">SEARCH FILTER / 01</span></header>
+<main>
+<div class="intro"><p class="eyebrow">LESS GENERATED. MORE DISCOVERED.</p><h1>Search, without<br>the <em>noise.</em></h1><p class="lede">The web is still out there. Get back to it.</p></div>
+<section class="power-card" aria-label="Filter status"><div><div class="status-title"><span class="status-dot" id="status-dot"></span><strong id="power-label">Loading settings…</strong></div><p id="power-description">Your search. Your choice.</p></div><label class="switch large"><input id="enabled" type="checkbox" role="switch" aria-label="Enable Stripper" disabled><span></span></label></section>
+<div class="page-status" aria-live="polite"><span id="page-name">CURRENT TAB</span><span id="page-count">Checking…</span></div>
+<section class="engine-section"><div class="section-heading"><h2>Where it works</h2><span>YOUR ENGINES</span></div><div id="engines"></div></section>
+<details id="preferences"><summary>Fine-tune your filter <span aria-hidden="true">+</span></summary><div class="preferences">
+<label class="option"><span><strong>Hide sponsored results</strong><small>Recognized paid listings and sponsored product blocks.</small></span><input type="checkbox" id="hideSponsored" role="switch" aria-label="Hide sponsored results"></label>
+<label class="option"><span><strong>Hide AI answers</strong><small>Overviews, summaries and generated panels.</small></span><input type="checkbox" id="hidePanels" role="switch" aria-label="Hide AI answers"></label>
+<label class="option"><span><strong>Hide AI shortcuts</strong><small>AI Mode, Copilot and chat entry points.</small></span><input type="checkbox" id="hideShortcuts" role="switch" aria-label="Hide AI shortcuts"></label>
+<label class="option"><span><strong>Skip AI search pages</strong><small>Open supported AI search URLs as web results.</small></span><input type="checkbox" id="redirectAI" role="switch" aria-label="Skip AI search pages"></label>
+<label class="option"><span><strong>Google: web links only</strong><small>Use Google’s Web filter. Images and other selected tabs stay available.</small></span><input type="checkbox" id="googleWeb" role="switch" aria-label="Google: web links only"></label>
+<p class="note">URL options may reload your current search. Pausing restores hidden panels immediately.</p></div></details>
+<p class="feedback" id="feedback" role="status"></p>
+</main><footer><span><span aria-hidden="true">◉</span> On your device. Off the cloud.</span><a href="help.html" target="_blank">About & help ↗</a></footer>
+<script src="core.js"></script><script src="popup.js"></script>
+</body></html>

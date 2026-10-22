@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+dist/
+artifacts/*.png
+artifacts/*.jpg
+web-ext-artifacts/
+.env
+.env.*
