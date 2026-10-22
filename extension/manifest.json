@@ -1,0 +1,122 @@
+{
+  "manifest_version": 3,
+  "name": "Stripper — Search without AI",
+  "version": "1.0.0",
+  "description": "Hide AI Overviews, AI Mode shortcuts, Copilot panels and sponsored search results. Private and configurable.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "stripper@grandmastr.github.io",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "action": {
+    "default_title": "Stripper — Search without AI",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://google.com/*",
+        "https://www.google.com/*",
+        "https://google.co.uk/*",
+        "https://www.google.co.uk/*",
+        "https://google.com.ng/*",
+        "https://www.google.com.ng/*",
+        "https://google.co.za/*",
+        "https://www.google.co.za/*",
+        "https://google.com.au/*",
+        "https://www.google.com.au/*",
+        "https://google.co.nz/*",
+        "https://www.google.co.nz/*",
+        "https://google.ca/*",
+        "https://www.google.ca/*",
+        "https://google.ie/*",
+        "https://www.google.ie/*",
+        "https://google.de/*",
+        "https://www.google.de/*",
+        "https://google.fr/*",
+        "https://www.google.fr/*",
+        "https://google.es/*",
+        "https://www.google.es/*",
+        "https://google.it/*",
+        "https://www.google.it/*",
+        "https://google.nl/*",
+        "https://www.google.nl/*",
+        "https://google.pt/*",
+        "https://www.google.pt/*",
+        "https://google.be/*",
+        "https://www.google.be/*",
+        "https://google.ch/*",
+        "https://www.google.ch/*",
+        "https://google.at/*",
+        "https://www.google.at/*",
+        "https://google.se/*",
+        "https://www.google.se/*",
+        "https://google.no/*",
+        "https://www.google.no/*",
+        "https://google.dk/*",
+        "https://www.google.dk/*",
+        "https://google.fi/*",
+        "https://www.google.fi/*",
+        "https://google.pl/*",
+        "https://www.google.pl/*",
+        "https://google.co.in/*",
+        "https://www.google.co.in/*",
+        "https://google.co.jp/*",
+        "https://www.google.co.jp/*",
+        "https://google.co.kr/*",
+        "https://www.google.co.kr/*",
+        "https://google.com.br/*",
+        "https://www.google.com.br/*",
+        "https://google.com.mx/*",
+        "https://www.google.com.mx/*",
+        "https://google.com.sg/*",
+        "https://www.google.com.sg/*",
+        "https://google.com.hk/*",
+        "https://www.google.com.hk/*",
+        "https://google.co.id/*",
+        "https://www.google.co.id/*",
+        "https://google.com.tr/*",
+        "https://www.google.com.tr/*",
+        "https://google.ae/*",
+        "https://www.google.ae/*",
+        "https://www.bing.com/*",
+        "https://bing.com/*",
+        "https://duckduckgo.com/*",
+        "https://www.duckduckgo.com/*",
+        "https://search.brave.com/*",
+        "https://safe.search.brave.com/*"
+      ],
+      "js": [
+        "core.js",
+        "filter.js",
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}
